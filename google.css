@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    font-size: 14px;
   }
   
   nav {
@@ -26,36 +27,47 @@ body {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    align-items: center;
   }
-  
+  #gmail-icon{
+    padding-top: 0;
+    padding-bottom: 0;
+    align-items: center;
+  }
+  #gmail-icon img{
+    display: inline;
+    padding: 0;
+    align-items: center;
+    margin: auto;
+  }
+  #gmail-img{
+    border-radius: 20px;
+  }
   nav ul li a:hover {
     background-color: #f6f0f0;
   }
-  #g1{
-   color: rgb(141, 160, 222); 
+  #google-logo{
+    height: 100px;
   }
-  #g2{
-    color: rgb(228, 71, 71); 
-   }
-   #g3{
-    color: rgb(229, 181, 24); 
-   }
-   #g4{
-    color: rgb(141, 160, 222); 
-   }
-   #g5{
-    color: rgb(35, 218, 114); 
-   }
-   #g6{
-    color: rgb(215, 58, 60); 
-   }
-   #top-icon-1{
-
-   }
    #mid-sect{
     margin: auto;
     align-content: center;
     text-align: center;
+   }
+   #input-sect{
+    display: flex;
+    max-width: 400px;
+    margin: auto;
+    border: solid;
+    border-radius: 30px;
+    align-items: center;
+   }
+   #input-sect input{
+    margin: auto;
+    border: none;
+   }
+   #input-sect input::selection{
+    border: none;
    }
    form{
     display: block;
@@ -69,18 +81,21 @@ body {
     margin: auto;
     margin-bottom: 40px;
    }
-   /*#top-icon-1{
-    position: absolute;
-    left: 400px;
-    bottom: 300px;
-   }*/
    h3 a{
     text-decoration: none;
-    color: black;
+    color: #1a0dab;
     padding: 5px;
+    font-size: small;
+    line-height: 28px;
    }
    h3 a:hover{
-    background-color: rgb(220, 255, 196);
+    border-bottom: solid 1px;
+   }
+   button{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
    }
    footer{
     position: fixed;
@@ -89,7 +104,7 @@ body {
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 15px;
-    background-color: rgb(212, 208, 208);
+    background-color: #f2f2f2;
    }
    #naija{
     display: block;
