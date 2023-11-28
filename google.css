@@ -8,13 +8,15 @@ body {
   nav {
     background-color: white;
     overflow: hidden;
+    justify-content: flex-end;
   }
   
   nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    float: right;
+    display: flex;
+    justify-content: flex-end;
   }
   
   nav ul li {
@@ -30,13 +32,10 @@ body {
     align-items: center;
   }
   #gmail-icon{
-    padding-top: 0;
-    padding-bottom: 0;
     align-items: center;
-  }
-  #gmail-icon img{
     display: inline;
     padding: 0;
+    padding-top: 10px;
     align-items: center;
     margin: auto;
   }
@@ -44,10 +43,11 @@ body {
     border-radius: 20px;
   }
   nav ul li a:hover {
-    background-color: #f6f0f0;
+    border-bottom: 1px solid;
   }
   #google-logo{
     height: 100px;
+    margin-top: 40px;
   }
    #mid-sect{
     margin: auto;
@@ -58,6 +58,7 @@ body {
     display: flex;
     max-width: 400px;
     margin: auto;
+    margin-bottom: 30px;
     border: solid;
     border-radius: 30px;
     align-items: center;
@@ -81,6 +82,21 @@ body {
     margin: auto;
     margin-bottom: 40px;
    }
+   #top-icon-1{
+    width: 20px;
+    height: 20px;
+    padding: 6px;
+   }
+   #top-icon-2{
+    width: 20px;
+    height: 20px;
+    padding: 6px;
+   }
+   #top-icon-3{
+    width: 20px;
+    height: 20px;
+    padding: 6px;
+   }
    h3 a{
     text-decoration: none;
     color: #1a0dab;
@@ -96,9 +112,14 @@ body {
     padding: 10px 20px;
     border-radius: 5px;
     margin: 5px;
+    
+   }
+   button:hover{
+    border: solid 1px #f6f0f0 ;
+    box-shadow: #f0f1ef;
    }
    footer{
-    position: fixed;
+     position: fixed;
     bottom: 0;
     width: 97%;
     padding-left: 20px;
@@ -112,15 +133,18 @@ body {
     height: 30px;
    }
    #naija p{
-    padding-top: 3px;
+     padding-top: 3px;
    }
-   #footer-left{
+  #footer-bottom{
+    display: flexbox;
+  }
+  #footer-left{
     list-style-type: none;
     margin: 0;
     padding: 0;
     float: left;
-   }
-   #footer-left li{
+  }
+  #footer-left li{
     display: inline;
     padding: 5px;
    }
@@ -129,7 +153,7 @@ body {
     color: black;
    }
    #footer-left li a:hover{
-    background-color: grey;
+    border-bottom: 1px solid;
    }
    #footer-right{
     list-style-type: none;
@@ -146,7 +170,7 @@ body {
     color: black;
    }
    #footer-right li a:hover{
-    background-color: grey;
+    border-bottom: 1px solid;
    }
    #footer-center{
     text-align: center;
