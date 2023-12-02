@@ -55,19 +55,25 @@ body {
     text-align: center;
    }
    #input-sect{
+    flex: 1;
     display: flex;
-    max-width: 400px;
+    padding: 5px 8px 0 14px;
+    display: flex;
+    max-width: 500px;
+    height: 40px;
     margin: auto;
     margin-bottom: 30px;
-    border: solid;
+    border: solid 1px rgb(229, 220, 220);
     border-radius: 30px;
     align-items: center;
    }
+   #input-sect:hover{
+    -moz-box-shadow: 2px 2px px #ccc;
+    -webkit-box-shadow: 2px 2px 2px #ccc;
+    box-shadow: 2px 2px 2px #ccc;
+   }
    #input-sect input{
     margin: auto;
-    border: none;
-   }
-   #input-sect input::selection{
     border: none;
    }
    form{
@@ -75,13 +81,16 @@ body {
     margin-top: 70px;
    }
    input{
-    width: 400px;
+    width: 380px;
     height: 27px;
-    border-radius: 20px;
-    display: block;
     margin: auto;
     margin-bottom: 40px;
+    text-transform: capitalize;
    }
+   input:focus{
+    outline: none;
+   }
+   
    #top-icon-1{
     width: 20px;
     height: 20px;
@@ -97,6 +106,15 @@ body {
     height: 20px;
     padding: 6px;
    }
+   #con-tp1{
+    display: inline;
+   }
+   #con-tp2{
+    display: inline;
+   }
+   #con-tp3{
+    display: inline;
+   }
    h3 a{
     text-decoration: none;
     color: #1a0dab;
@@ -108,15 +126,24 @@ body {
     border-bottom: solid 1px;
    }
    button{
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin: 5px;
+    border: solid 1px #f8f9fa;
+    background-color: #f8f9fa;
+    padding: 0px 16px;
+    border-radius: 4px;
+    margin: 11px 4px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
     
    }
    button:hover{
-    border: solid 1px #f6f0f0 ;
-    box-shadow: #f0f1ef;
+    box-shadow: 0 1px 1px;
+    background-color: #f8f9fa;
+    border: solid 1px #dadce0;
+    color: #202124;
    }
    footer{
      position: fixed;
@@ -124,7 +151,7 @@ body {
     width: 97%;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
     background-color: #f2f2f2;
    }
    #naija{
@@ -136,13 +163,15 @@ body {
      padding-top: 3px;
    }
   #footer-bottom{
-    display: flexbox;
+    display: flex;
+    margin: auto;
   }
   #footer-left{
     list-style-type: none;
-    margin: 0;
+    margin: auto;
     padding: 0;
-    float: left;
+    display: inline-block;
+    align-items: center;
   }
   #footer-left li{
     display: inline;
@@ -157,9 +186,10 @@ body {
    }
    #footer-right{
     list-style-type: none;
-    margin: 0;
+    margin: auto;
     padding: 0;
-    float: right;
+    display: inline-block;
+    align-items: center;
    }
    #footer-right li{
     display: inline;
@@ -174,6 +204,8 @@ body {
    }
    #footer-center{
     text-align: center;
+    margin: auto;
     margin-left: 100px;
-    display: inline;
+    display: inline-block;
+    align-items: center;
    }
