@@ -60,6 +60,7 @@ body {
     padding: 5px 8px 0 14px;
     display: flex;
     max-width: 500px;
+    min-width: 400px;
     height: 40px;
     margin: auto;
     margin-bottom: 30px;
@@ -81,7 +82,8 @@ body {
     margin-top: 70px;
    }
    input{
-    width: 380px;
+    max-width: 380px;
+    min-width: 280px;
     height: 27px;
     margin: auto;
     margin-bottom: 40px;
@@ -182,7 +184,7 @@ body {
     color: black;
    }
    #footer-left li a:hover{
-    border-bottom: 1px solid;
+    border-bottom: 1.5px solid;
    }
    #footer-right{
     list-style-type: none;
@@ -200,7 +202,7 @@ body {
     color: black;
    }
    #footer-right li a:hover{
-    border-bottom: 1px solid;
+    border-bottom: 1.5px solid;
    }
    #footer-center{
     text-align: center;
@@ -208,4 +210,11 @@ body {
     margin-left: 100px;
     display: inline-block;
     align-items: center;
+   }
+   #footer-center a{
+    color: black;
+    text-decoration: none;
+   }
+   #footer-center a:hover{
+    border-bottom: 1.5px solid;
    }
